@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - E-Learning Platform</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2 class="logo">LearnHub</h2>
+        <button class="toggle-btn" id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
+        <li><a href="#" class="nav-link" data-page="dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content" id="mainContent">
+      <div id="pageContent"></div>
+    </main>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
