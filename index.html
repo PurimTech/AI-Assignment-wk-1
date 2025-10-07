@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnHub - E-Learning Platform</title>
+  <title>LearnHub - Empowering Africa's Youth Through Technology</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="app-container">
-    <nav class="sidebar" id="sidebar">
-      <div class="sidebar-header">
+  <nav class="top-navbar" id="topNavbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
         <h2 class="logo">LearnHub</h2>
-        <button class="toggle-btn" id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
       </div>
-      <ul class="nav-menu">
+      <ul class="navbar-menu" id="navbarMenu">
         <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
         <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
         <li><a href="#" class="nav-link" data-page="dashboard">Dashboard</a></li>
+        <li><a href="#" class="nav-link" id="openChatbot">AI Tutor</a></li>
       </ul>
-    </nav>
+      <div class="navbar-actions">
+        <div class="points-display" id="navbarPoints">
+          <span>⭐</span>
+          <span id="navbarPointsValue">0</span>
+        </div>
+        <div class="user-menu" id="userMenu">
+          <button class="user-menu-trigger" id="userMenuTrigger">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%2314b8a6' stroke-width='2'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E" alt="User" class="user-avatar">
+            <span class="user-name" id="userName">Guest</span>
+          </button>
+          <div class="user-dropdown" id="userDropdown">
+            <a href="#" class="dropdown-item" data-page="profile">Profile</a>
+            <a href="#" class="dropdown-item" id="settingsLink">Settings</a>
+            <a href="#" class="dropdown-item" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+        <button class="login-btn" id="loginBtn">Login</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </div>
+  </nav>
 
-    <main class="main-content" id="mainContent">
-      <div id="pageContent"></div>
-    </main>
-  </div>
+  <main class="main-content" id="mainContent">
+    <div id="pageContent"></div>
+  </main>
 
   <script type="module" src="/main.js"></script>
 </body>
